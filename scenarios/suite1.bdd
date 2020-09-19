@@ -1,0 +1,18 @@
+
+
+SCENARIO: SampleTest
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"]}
+	
+	Given user on orbit home page
+	And user click on 'Flights' Tab
+	And user click on 'One way' button
+	And user click on 'Flying from' field
+	And user cick on field 'Flying to'
+	And user cick on departing field
+	And user select nest day date
+	And user click on 'search'
+	And user verify search flight details by clicking on 'show-flight-details'
+	Then user verify search flight details 'Pune' sourse 'Ahmedabad' destination
+
+END
+

@@ -1,0 +1,225 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "userOnOrbitHomePage",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://orbits.com}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 85826
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "userClickOnTab",
+      "args": [
+        "[Flights]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=flight-type-one-way-label-hp-flight, using=id}"
+          ],
+          "result": "id: 0.4687405324461231-1",
+          "subLogs": [],
+          "duration": 94
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.id: flight-type-one-way-label-hp-flight",
+            "{\"id\":\"0.4687405324461231-1\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 287
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "userClickOnButton",
+      "args": [
+        "[One way]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//span[@class='icon icon-flights'][1], using=xpath}"
+          ],
+          "result": "id: 0.4687405324461231-2",
+          "subLogs": [],
+          "duration": 84
+        },
+        {
+          "commandName": "clickElement",
+          "args": [
+            "By.xpath: //span[@class='icon icon-flights'][1]",
+            "{\"id\":\"0.4687405324461231-2\"}"
+          ],
+          "result": "clickElement:null",
+          "subLogs": [],
+          "duration": 286
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "userClickOnFromField",
+      "args": [
+        "[Flying from]"
+      ],
+      "result": "fail",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user cick on field 'Flying to'",
+      "args": [
+        "[Flying to]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user cick on departing field",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user select nest day date",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user click on 'search'",
+      "args": [
+        "[search]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user verify search flight details by clicking on 'show-flight-details'",
+      "args": [
+        "[show-flight-details]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then user verify search flight details 'Pune' sourse 'Ahmedabad' destination",
+      "args": [
+        "[Pune, Ahmedabad]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given user on orbit home page",
+      "type": "TestStepPass",
+      "duration": 86060,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'Flights' Tab",
+      "type": "TestStepPass",
+      "duration": 470,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'One way' button",
+      "type": "TestStepPass",
+      "duration": 376,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'Flying from' field",
+      "type": "TestStepFail",
+      "screenshot": "test-results/03_Jun_2018_01_06_AM/img/SampleTest_1uevliw0bcrq158203.png",
+      "duration": 1,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "type": "Fail",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "And user cick on field 'Flying to'",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user cick on departing field",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user select nest day date",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'search'",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user verify search flight details by clicking on 'show-flight-details'",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then user verify search flight details 'Pune' sourse 'Ahmedabad' destination",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "java.lang.NullPointerException\r\n\tat .And user click on 'Flying from' field(scenarios/suite1.bdd:9)\r\n\tat java.util.regex.Matcher.getTextLength(Matcher.java:1283)\r\n\tat java.util.regex.Matcher.reset(Matcher.java:309)\r\n\tat java.util.regex.Matcher.<init>(Matcher.java:229)\r\n\tat java.util.regex.Pattern.matcher(Pattern.java:1093)\r\n\tat java.util.Formatter.parse(Formatter.java:2547)\r\n\tat java.util.Formatter.format(Formatter.java:2501)\r\n\tat java.util.Formatter.format(Formatter.java:2455)\r\n\tat java.lang.String.format(String.java:2940)\r\n\tat com.orbit.pages.HomePage.userClickOnFromField(HomePage.java:48)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:160)\r\n\tat com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)\r\n\tat com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:167)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:219)\r\n"
+}

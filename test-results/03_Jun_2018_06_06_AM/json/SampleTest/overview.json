@@ -1,0 +1,31 @@
+{
+  "total": 0,
+  "pass": 0,
+  "fail": 0,
+  "skip": 0,
+  "envInfo": {
+    "browser-actual-capabilities": {},
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "12-RC3",
+      "qaf-Version": "2.1",
+      "qaf-Build-Time": "06-Aug-2017 11:49:43"
+    },
+    "run-parameters": {
+      "baseurl": "http://orbits.com",
+      "resources": "resources"
+    },
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Oracle Corporation",
+      "java.version": "1.8.0_161",
+      "os.arch": "amd64",
+      "host": "DESKTOP-RL0EJLK",
+      "os.name": "Windows 10",
+      "user.name": "Sumedha",
+      "os.version": "10.0"
+    }
+  },
+  "startTime": 1528031173489,
+  "endTime": 0
+}

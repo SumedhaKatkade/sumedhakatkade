@@ -1,0 +1,13 @@
+{
+  "name": "SampleTest.scenarios/suite1.bdd",
+  "status": "unstable",
+  "tests": [
+    "SampleTest"
+  ],
+  "total": 0,
+  "pass": 0,
+  "fail": 0,
+  "skip": 0,
+  "startTime": 1528007989819,
+  "endTime": 1528007991724
+}

@@ -1,0 +1,12 @@
+03:40:46 scenario.file.loc[Ljava.lang.String;@382db087
+03:40:46 loading BDD file: E:\Infostretch\QAS Workspace\Assignment_3\.\scenarios\suite1.bdd
+03:40:46 total test found: 1
+03:40:47 
+
+Executing scenario: SampleTest - Sample Test Scenario
+03:40:47 pkg: com.qmetry.qaf.automation.step
+03:40:48 pkg: com.orbit
+03:41:05 Found duplicate step to load [] with [lower] prority then []
+03:41:05 Invoking Teststep: Given user on orbit home page
+03:41:44 Completed Teststep: Given user on orbit home page
+03:41:44 Invoking Teststep: And user click on 'Flights' Tab with arguments: [Flights]

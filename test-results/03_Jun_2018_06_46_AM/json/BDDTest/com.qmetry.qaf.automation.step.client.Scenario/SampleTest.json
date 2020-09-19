@@ -1,0 +1,185 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "userOnOrbitHomePage",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://orbits.com}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 91920
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "userClickOnTab",
+      "args": [
+        "[Flights]"
+      ],
+      "result": "fail",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user click on 'One way' button",
+      "args": [
+        "[One way]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user click on 'Flying from' field",
+      "args": [
+        "[Flying from]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user cick on field 'Flying to'",
+      "args": [
+        "[Flying to]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user cick on departing field",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user select nest day date",
+      "args": [
+        "[]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user click on 'search'",
+      "args": [
+        "[search]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "And user verify search flight details 'Pune' sourse 'Ahmedabad' destination",
+      "args": [
+        "[Pune, Ahmedabad]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "Then user verify search flight details by clicking on 'show-flight-details'",
+      "args": [
+        "[show-flight-details]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given user on orbit home page",
+      "type": "TestStepPass",
+      "duration": 92061,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'Flights' Tab",
+      "type": "TestStepFail",
+      "screenshot": "../img/SampleTest_145syvaccwsp46081.png",
+      "duration": 7,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "type": "Fail",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "And user click on 'One way' button",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'Flying from' field",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user cick on field 'Flying to'",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user cick on departing field",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user select nest day date",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user click on 'search'",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And user verify search flight details 'Pune' sourse 'Ahmedabad' destination",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then user verify search flight details by clicking on 'show-flight-details'",
+      "type": "TestStep",
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "java.lang.NullPointerException\r\n\tat .And user click on 'Flights' Tab(scenarios/suite1.bdd:7)\r\n\tat java.util.regex.Matcher.getTextLength(Matcher.java:1283)\r\n\tat java.util.regex.Matcher.reset(Matcher.java:309)\r\n\tat java.util.regex.Matcher.<init>(Matcher.java:229)\r\n\tat java.util.regex.Pattern.matcher(Pattern.java:1093)\r\n\tat java.util.Formatter.parse(Formatter.java:2547)\r\n\tat java.util.Formatter.format(Formatter.java:2501)\r\n\tat java.util.Formatter.format(Formatter.java:2455)\r\n\tat java.lang.String.format(String.java:2940)\r\n\tat com.orbit.pages.HomePage.userClickOnTab(HomePage.java:32)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:160)\r\n\tat com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)\r\n\tat com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:167)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:219)\r\n"
+}

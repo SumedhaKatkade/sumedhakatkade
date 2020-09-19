@@ -1,0 +1,10 @@
+23:59:35 scenario.file.loc[Ljava.lang.String;@1ad282e0
+23:59:35 loading BDD file: scenarios/suite1.bdd
+23:59:35 total test found: 1
+23:59:37 
+
+Executing scenario: SampleTest - Sample Test Scenario
+23:59:38 pkg: com.qmetry.qaf.automation.step
+23:59:42 pkg: com.orbit
+00:00:09 pkg: com.qmetry.qaf.automation.step
+00:00:09 pkg: com.orbit

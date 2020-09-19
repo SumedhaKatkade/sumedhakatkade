@@ -1,0 +1,6 @@
+label.oneway.homepage = {\"locator\":\"id=flight-type-one-way-label-hp-flight\"}
+button.flights.homepage = {\"locator\":\"xpath=//span[@class='icon icon-flights'][1]\"}
+input.from.homepage = {\"locator\":\"xpath=(//input[@data-gcw-field-type='origin'])[1]\"}
+input.to.homepage = {\"locator\":\"xpath=(//input[@data-gcw-field-type='destination'])[1]\"}
+input.departing.homepage = {\"locator\":\"xpath=//input[@id='flight-departing-single-hp-flight']\"}
+table.month.homepage = {\"locator\":\"xpath=\"}

@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  BDD Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BDD Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 03 00:07:00 PDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>111 seconds (111909 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.SampleTest()'><b>SampleTest</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (SampleTest)<br>Test method: Sample Test Scenario<br/>
+<a href="#Output-250112971" onClick='toggleBox("Output-250112971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-250112971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-250112971">
+<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given user on orbit home page</div><div  class="teststepfail"><span class="teststepfail-label">T </span>And user click on 'Flights' Tab <a href="../img/SampleTest_145syvaccwsp46081.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>null</div></div><div  class="teststep"><span class="teststep-label">T </span>And user click on 'One way' button</div><div  class="teststep"><span class="teststep-label">T </span>And user click on 'Flying from' field</div><div  class="teststep"><span class="teststep-label">T </span>And user cick on field 'Flying to'</div><div  class="teststep"><span class="teststep-label">T </span>And user cick on departing field</div><div  class="teststep"><span class="teststep-label">T </span>And user select nest day date</div><div  class="teststep"><span class="teststep-label">T </span>And user click on 'search'</div><div  class="teststep"><span class="teststep-label">T </span>And user verify search flight details 'Pune' sourse 'Ahmedabad' destination</div><div  class="teststep"><span class="teststep-label">T </span>Then user verify search flight details by clicking on 'show-flight-details'</div></div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at .And user click on &apos;Flights&apos; Tab(scenarios/suite1.bdd:7)
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
+	at java.util.regex.Matcher.reset(Matcher.java:309)
+	at java.util.regex.Matcher.&lt;init&gt;(Matcher.java:229)
+	at java.util.regex.Pattern.matcher(Pattern.java:1093)
+	at java.util.Formatter.parse(Formatter.java:2547)
+	at java.util.Formatter.format(Formatter.java:2501)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at com.orbit.pages.HomePage.userClickOnTab(HomePage.java:32)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:160)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:167)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:219)
+</pre></div><a href='#' onClick='toggleBox("stack-trace250112971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace250112971'><pre>java.lang.NullPointerException
+	at .And user click on &apos;Flights&apos; Tab(scenarios/suite1.bdd:7)
+	at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
+	at java.util.regex.Matcher.reset(Matcher.java:309)
+	at java.util.regex.Matcher.&lt;init&gt;(Matcher.java:229)
+	at java.util.regex.Pattern.matcher(Pattern.java:1093)
+	at java.util.Formatter.parse(Formatter.java:2547)
+	at java.util.Formatter.format(Formatter.java:2501)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at com.orbit.pages.HomePage.userClickOnTab(HomePage.java:32)
+	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:160)
+	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
+	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
+	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:167)
+	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:219)
+</pre></div></td>
+<td>110</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3e8</td></tr>
+</table><p>
+</body>
+</html>
